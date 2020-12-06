@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <h1>Cart</h1>
+    <table>
+        <tr>
+           <th>Product</th>     
+           <th>Price</th>     
+           <th>Quantity</th>
+           <th>Size</th>     
+           <th></th>     
+           <th></th>     
+        </tr>
+        <tr>
+           <td><ins>DeFacto Hoodie</ins></td>
+           <td>120</td> 
+           <td>1</td>
+           <td>S</td> 
+           <td><button>+</button></td> 
+           <td><button>-</button></td> 
+        </tr>
+        <tr>
+           <td><ins>DeFacto Sweater</ins></td>
+           <td>130</td> 
+           <td>1</td>
+           <td>XS</td>
+           <td><button>+</button></td> 
+           <td><button>-</button></td> 
+        </tr>
+        <tr>
+            <td><b>Total</b></td>
+            <td>250</td>
+            <td>2</td>
+            <td></td>
+            <td></td> 
+            <td></td>           
+        </tr>
+    </table>
+    <form method="POST">
+        <label>Name:
+            <input type="text" name="name" placeholder="name" required>
+        </label>
+        <label>Email:
+            <input type="email" name="email" placeholder="email" required>
+        </label>
+        <input type="submit">
+    </form>
+</body>
+</html>
