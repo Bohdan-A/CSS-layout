@@ -63,11 +63,13 @@ p {
     display: block;
     margin: auto;
 }
+
 .banner img {
     display: block;
     margin: auto;
     max-width: 1895px;
 }
+
 .info img {
     display: block;
     margin: auto;
