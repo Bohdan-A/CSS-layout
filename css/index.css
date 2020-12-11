@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); 
 
 :root {
     font-family: 'Open Sans', sans-serif;
-    --main-color: black;
+    --main-color: black; 
     scroll-behavior: smooth;
+    background-color: gainsboro;
 }
-
-
 
 .logo {
     font-family: 'Libre Baskerville', serif;
@@ -17,8 +15,8 @@
 }
 
 .main-logo {
-    text-align: center;
-
+    height: 30px;
+    width: 30px;
 }
 
 .menu a {
@@ -36,11 +34,10 @@
 }
 
 @media (min-width: 750px) {
-       
-        header nav {
-            display: flex;
-        }
-    
+    header nav {
+        display: flex;
+    }
+
     header nav .menu {
         display: flex;
         flex: 1;
@@ -49,7 +46,7 @@
     }
 }
 
-.backside a {
+.image a {
     text-align: center;
     display: block;
     text-decoration: none;
@@ -58,7 +55,7 @@
     border: 1px solid transparent;
 }
 
-.backside a:hover {
+.image a:hover {
     border-color: black;
     font-weight: bold;
 }
@@ -70,6 +67,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin-top: 60px;
 }
 
 p {
@@ -82,17 +80,44 @@ p {
     margin: auto;
 }
 
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 700px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+}
+
+@media (min-width: 1700px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+    }
+}
+
 .banner img {
     background-image: url(../img/main.jpg);
     display: block;
     margin: auto;
-    max-width: 1895px;
+    max-width: 1400px;
 }
 
 .info img {
     display: block;
     margin: auto;
     text-align: center;
+    max-width: 1300px;
 }
 
 .product-card h3 {
@@ -112,7 +137,7 @@ p {
 }
 
 form {
-    display: inline-block;
+    text-align: center;
     min-width: 120px;
 }
 
