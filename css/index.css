@@ -4,7 +4,7 @@
     font-family: 'Open Sans', sans-serif;
     --main-color: black; 
     scroll-behavior: smooth;
-    background-color: gainsboro;
+    background-image: url(../img/main-background.gif);
 }
 
 .logo {
@@ -24,8 +24,8 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 3px 8px 3px 8px;
     color: var(--main-color);
-    border: 1px solid transparent;
 }
 
 .menu a:hover {
@@ -56,22 +56,24 @@
 }
 
 .image a:hover {
-    border-color: black;
+    --main-color: black;  
     font-weight: bold;
 }
 
 h1 {
     text-align: center;
-    color: #170909;
+    color: black;
 }
 
 h2 {
     text-align: center;
     margin-top: 60px;
+    color: black;
 }
 
 p {
     text-align: center;
+    color: black; 
 }
 
 .product-card img {
@@ -139,8 +141,4 @@ p {
 form {
     text-align: center;
     min-width: 120px;
-}
-
-footer {
-    background-color: gray;
 }
