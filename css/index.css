@@ -4,33 +4,6 @@
     font-family: 'Open Sans', sans-serif;
     --main-color: black; 
     scroll-behavior: smooth;
-    background-image: url(../img/main-background.gif);
-}
-
-.logo {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.main-logo {
-    height: 30px;
-    width: 30px;
-}
-
-.menu a {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 3px 8px 3px 8px;
-    color: var(--main-color);
-}
-
-.menu a:hover {
-    border-color: black;
-    font-weight: bold;
 }
 
 @media (min-width: 750px) {
@@ -67,24 +40,12 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: 60px;
     color: black;
 }
 
 p {
     text-align: center;
     color: black; 
-}
-
-.product-card img {
-    max-width: 400px;
-    display: block;
-    margin: auto;
-}
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 @media (min-width: 700px) {
@@ -108,28 +69,8 @@ p {
     }
 }
 
-.banner img {
-    background-image: url(../img/main.jpg);
-    display: block;
-    margin: auto;
-    max-width: 1400px;
-}
-
-.info img {
-    display: block;
-    margin: auto;
-    text-align: center;
-    max-width: 1300px;
-}
-
 .product-card h3 {
     text-align: center;
-}
-
-.product-card {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
 }
 
 .buttons {
