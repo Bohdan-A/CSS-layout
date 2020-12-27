@@ -6,8 +6,8 @@
     scroll-behavior: smooth;
 }
 
-div, article, nav, section {
-    padding: 15px;
+div, article, section {
+    padding: 10px;
 }
 
 @media (min-width: 750px) {
@@ -45,32 +45,12 @@ h1 {
 h2 {
     text-align: center;
     color: black;
+    padding: 15px;
 }
 
 p {
     text-align: center;
-    color: black; 
-}
-
-@media (min-width: 700px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: repeat(1, 6fr);
-    }
-}
-
-@media (min-width: 900px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: repeat(2, 3fr);
-    }
-}
-
-@media (min-width: 1700px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-    }
+    color: black;
 }
 
 .product-card h3 {
@@ -83,7 +63,105 @@ p {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-form {
+* {
+   box-sizing: border-box;
+}
+
+.decor {
+   position: relative;
+   max-width: 400px;
+   margin: 50px auto 0;
+   background: white;
+   border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   background: #212529;
+   border-radius: 20px;
+}
+.form-left-decoration {
+   bottom: 60px;
+   left: -30px;
+}
+.form-right-decoration {
+   top: 60px;
+   right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   border-radius: 30px;
+   background: white;
+}
+.form-left-decoration:before {
+   top: -20px;
+}
+.form-left-decoration:after {
+   top: 20px;
+   left: 10px;
+}
+.form-right-decoration:before {
+   top: -20px;
+   right: 0;
+}
+.form-right-decoration:after {
+   top: 20px;
+   right: 10px;
+}
+.circle {
+   position: absolute;
+   bottom: 80px;
+   left: -55px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: white;
+}
+.form-inner {
+   padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+   margin-top: 30px;
+   background: #212529;
+   border-bottom: 4px solid #212529;
+   color: white;
+   font-size: 14px;
+}
+.form-inner textarea {
+   resize: none;
+}
+.form-inner h3 {
+   margin-top: 0;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   color: #707981;
+}
+
+.footer-end {
+    color: white;
     text-align: center;
-    min-width: 120px;
+    display: -moz-inline-grid;
+    background-color: #212529;
+    padding-top: 10px;
+}
+
+ul li {
+    list-style: none;
 }
