@@ -1,24 +1,24 @@
-var snowmax = 30;
-var snowcolor = new Array("#AAAACC", "#DDDDFF", "#CCCCDD", "#F3F3F3", "#F0FFFF", "#FFFFFF", "#EFF5FF")
-var snowtype = new Array("Arial Black", "Arial Narrow", "Times", "Comic Sans MS");
-var snowletter = "*";
-var sinkspeed = 0.3;
-var snowmaxsize = 40;
-var snowminsize = 8;
-var snowingzone = 1;
-var snow = new Array();
-var marginbottom;
-var marginright;
-var timer;
-var i_snow = 0;
-var x_mv = new Array();
-var crds = new Array();
-var lftrght = new Array();
-var browserinfos = navigator.userAgent;
-var ie5 = document.all && document.getElementById && !browserinfos.match(/Opera/);
-var ns6 = document.getElementById && !document.all;
-var opera = browserinfos.match(/Opera/);
-var browserok = ie5 || ns6 || opera;
+let snowmax = 30;
+let snowcolor = new Array("#AAAACC", "#DDDDFF", "#CCCCDD", "#F3F3F3", "#F0FFFF", "#FFFFFF", "#EFF5FF")
+let snowtype = new Array("Arial Black", "Arial Narrow", "Times", "Comic Sans MS");
+let snowletter = "*";
+let sinkspeed = 0.3;
+let snowmaxsize = 40;
+let snowminsize = 8;
+let snowingzone = 1;
+let snow = new Array();
+let marginbottom;
+let marginright;
+let timer;
+let i_snow = 0;
+let x_mv = new Array();
+let crds = new Array();
+let lftrght = new Array();
+let browserinfos = navigator.userAgent;
+let ie5 = document.all && document.getElementById && !browserinfos.match(/Opera/);
+let ns6 = document.getElementById && !document.all;
+let opera = browserinfos.match(/Opera/);
+let browserok = ie5 || ns6 || opera;
 
 function randommaker(range) {
     rand = Math.floor(range * Math.random());
@@ -33,7 +33,7 @@ function initsnow() {
         marginbottom = window.innerHeight;
         marginright = window.innerWidth;
     }
-    var snowsizerange = snowmaxsize - snowminsize;
+    let snowsizerange = snowmaxsize - snowminsize;
     for (i = 0; i <= snowmax; i++) {
         crds[i] = 0;
         lftrght[i] = Math.random() * 15;
